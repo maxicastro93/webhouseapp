@@ -1,0 +1,25 @@
+<div class="container p-4">
+    
+        <table class="table caption-top">
+            
+            <caption>List of users</caption>
+            <thead>
+                <tr>
+                <th scope="col">Nro Orden</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Creado hace</th>
+                <th scope="col">URL</th>
+                 </tr>
+            </thead>
+            {{#each table}}
+                <tbody>
+                    <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{title}}</td>
+                    <td>{{url}}</td>
+                    <td>{{timeago created_at}}</td>
+                    </tr>
+                </tbody>
+            {{/each}}
+        </table>
+</div>
