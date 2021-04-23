@@ -8,4 +8,3 @@ module.exports =
     }
 
 };
-//mysql://:@/?reconnect=true
